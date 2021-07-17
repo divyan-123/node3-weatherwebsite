@@ -9,7 +9,7 @@ const forecast = (address,callback)=>
     else if(body.error)
     callback('unable to find the location',undefined)
     else
-    callback(undefined,'temperature: '+body.current.temperature+' degree celcius\n humidity: ' +body.current.humidity)
+    callback(undefined,'temperture: '+body.current.temperature+' degree celcius\n humidity: ' +body.current.humidity)
   })
 }
 module.exports = forecast
